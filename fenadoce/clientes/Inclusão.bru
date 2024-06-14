@@ -1,0 +1,20 @@
+meta {
+  name: Inclusão
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/clientes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "nome": "Joaquim",
+    "email": "Joaquim@gmail.com",
+    "cidade": "Pelotas",
+    "dataNasc": "1995-10-21"
+  }
+}
